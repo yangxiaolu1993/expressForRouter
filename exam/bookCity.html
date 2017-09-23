@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>     
+    <meta charset="utf-8"/>             
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>     
+    <meta content="yes" name="apple-mobile-web-app-capable"/>     
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>     
+    <meta content="telephone=no" name="format-detection"/>
+    <title>书城</title>
+
+    <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="static/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/bookCity.css" />
+
+    <script src="static/jquery/jquery-3.2.1.min.js"></script>
+	<script src="static/swiper/js/swiper.jquery.min.js"></script>
+    <script src="adaptive/adaptive.js"></script>
+    <script src="js/bookCity.js"></script>
+
+    <script>
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 18;
+        window['adaptive'].maxWidth = 540;
+        window['adaptive'].init();
+    </script>
+</head>
+<body>
+    <div class="cityContent">
+        <!-- 轮播图 -->
+        <div class="swiper">
+            <div class="swiper-container" id="citySwpier">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/swiper/0.jpg"/></div>
+                    <div class="swiper-slide"><img src="image/swiper/1.jpg"/></div>
+                    <div class="swiper-slide"><img src="image/swiper/2.jpg"/></div>
+                    
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="inform">
+                <div class="informLeft informItem">
+                    <i class="line"></i>
+                    <span>超级会员全场免费</span>    
+                </div>    
+                <div class="informCenter informItem">
+                    <span>剩 15 天08:14:42</span>
+                </div>
+                <div class="informRight informItem">
+                    <a href="javascript:void(0)">更多会员特权<i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- 导航 -->
+        <nav class="mainNav">
+            <ul>
+                <li class="navItem"><a href="javascript:void(0)"><span class="navItemImg"></span><h2 class="navItemName">分类</h2></a></li>
+                <li class="navItem"><a href="javascript:void(0)"><span class="navItemImg"></span><h2 class="navItemName">排行</h2></a></li>
+                <li class="navItem"><a href="javascript:void(0)"><span class="navItemImg"></span><h2 class="navItemName">女生</h2></a></li>
+                <li class="navItem"><a href="javascript:void(0)"><span class="navItemImg"></span><h2 class="navItemName">男生</h2></a></li>
+                <li class="navItem"><a href="javascript:void(0)"><span class="navItemImg"></span><h2 class="navItemName">出版</h2></a></li>
+            </ul>
+        </nav>
+        <!-- 快讯 -->
+        <div class="newsFlash">
+            <div class="newsLogo">
+                <span></span><i class="newsLogoLine"></i>
+            </div>
+            <div class="newsMain">
+                <div class="swiper-container" id="newSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h2 class="swiperTitle">打造精品书单，体验酣畅阅读1</h2>
+                            <span class="swiperDes">优质书单云集，博览精品好书</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <h2 class="swiperTitle">打造精品书单，体验酣畅阅读2</h2>
+                            <span class="swiperDes">优质书单云集，博览精品好书</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <h2 class="swiperTitle">打造精品书单，体验酣畅阅读3</h2>
+                            <span class="swiperDes">优质书单云集，博览精品好书</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <h2 class="swiperTitle">打造精品书单，体验酣畅阅读4</h2>
+                            <span class="swiperDes">优质书单云集，博览精品好书</span>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="newLine"></div>
+        <footer>
+            <nav>
+                <ul>
+                    <li class="navFooter0">
+                        <a href=""><span class="navFooterImg"></span><h2 class="navFooterName">书架</h2></a>
+                    </li>
+                    <li class="navFooter1">
+                        <a href=""><span class="navFooterImg"></span><h2 class="navFooterName">免费</h2></a>
+                    </li>
+                    <li class="navFooter2 active">
+                        <a href=""><span class="navFooterImg"></span><h2 class="navFooterName">书城</h2></a>
+                    </li>
+                    <li class="navFooter3">
+                        <a href=""><span class="navFooterImg"></span><h2 class="navFooterName">原创</h2></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

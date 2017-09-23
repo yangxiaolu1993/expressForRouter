@@ -1,0 +1,78 @@
+/* 底部 */
+footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background:#fff;
+    color: #999999;
+    border-top:1px solid #F1F1F4;
+}
+footer ul{
+    margin: 0;
+    text-align: center;
+    width: 92%;
+    margin:0.1rem 4%;
+    display: -moz-box;  /* Firefox */
+    display: -ms-flexbox;    /* IE10 */
+    display: -webkit-box;    /* Safari */ 
+    display: -webkit-flex;    /* Chrome, WebKit */
+    display: box; 
+    display: flexbox; 
+    display: flex;
+    overflow: hidden;
+    -webkit-justify-content:space-between;
+    justify-content: space-between;
+
+}
+footer ul li{
+    width: 23%;
+    text-align: center;
+}
+footer ul li span.navFooterImg{
+    display: inline-block;
+    width:0.4rem;
+    height:0.4rem;
+    
+}
+
+footer ul li:nth-child(1) span.navFooterImg{
+    background:url('../image/icon/bookcase.png') no-repeat;
+    background-size:cover;
+}
+footer ul li:nth-child(2) span.navFooterImg{
+    background:url('../image/icon/free.png') no-repeat;
+    background-size:cover;
+}
+footer ul li:nth-child(3) span.navFooterImg{
+    background:url('../image/icon/bookcity.png') no-repeat;
+    background-size:cover;
+}
+footer ul li:nth-child(4) span.navFooterImg{
+    background:url('../image/icon/originality.png') no-repeat;
+    background-size:cover;
+}
+footer ul li:nth-child(1).active span.navFooterImg{
+    background:url('../image/icon/bookcase-active.png') no-repeat;
+    background-size:cover;
+}
+footer ul li:nth-child(2).active span.navFooterImg{
+    background:url('../image/icon/free-active.png') no-repeat;
+    background-size:cover;
+}
+footer ul li:nth-child(3).active span.navFooterImg{
+    background:url('../image/icon/bookcity-active.png') no-repeat;
+    background-size:cover;
+}
+footer ul li:nth-child(4).active span.navFooterImg{
+    background:url('../image/icon/originality-active.png') no-repeat;
+    background-size:cover;
+}
+
+footer ul li h2.navFooterName{
+    font-weight: normal;
+    font-size:0.18rem;
+    color:#999
+}
+footer ul li.active h2.navFooterName{
+    color:#00c98d;
+}

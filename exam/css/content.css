@@ -1,0 +1,96 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font: "Helvetica Neue",Helvetica,STHeiTi,sans-serif;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word} 
+
+/* 换一换 */
+.changeBtn{
+    border-top:1px solid #fafafa;
+    height: 0.96rem;
+    width:100%;
+    line-height: 0.96rem;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.28rem;
+}
+.changeBtn changeTitle{
+   margin-right:0.1rem;
+}
+
+/* 二级标题 */
+header.headerSecond{
+    padding:0.32px 0;
+    position: relative;
+    width:100%;
+}
+header.headerSecond h3{
+    padding-left:0.32rem;
+    color:#999;
+    display: inline-block;
+    height: 0.32rem;
+    font-size: 0.28rem;
+    position: relative
+}
+header.headerSecond h3:after{
+    content:'';
+    width: 0.06rem;
+    height: 0.28rem;
+    display: inline-block;
+    background:#00c98d;
+    position: absolute;
+    top: 0.01rem;
+    left: 0
+}
+/* 图书展示方式 */
+.bookMain{
+    margin: 0;
+    text-align: center;
+    width: 92%;
+    margin:0.32rem 4%;
+    display: -moz-box;  /* Firefox */
+    display: -ms-flexbox;    /* IE10 */
+    display: -webkit-box;    /* Safari */ 
+    display: -webkit-flex;    /* Chrome, WebKit */
+    display: box; 
+    display: flexbox; 
+    display: flex;
+    overflow: hidden;
+    -webkit-justify-content:space-between;
+    justify-content: space-between;
+}
+.bookMain li.bookItem{
+    width: 23%;
+    text-align: center;
+}
+.bookMain li.bookItem .bookImg img{
+    display: block;
+    /* min-width: 100%;
+    min-height: 100%; */
+    width:100%; 
+}
+.bookMain li.bookItem .bookTitle,
+.bookMain li.bookItem .bookAuthor{
+    display: block;
+    width: 100%;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    text-align: left;
+}
+.bookMain li.bookItem .bookTitle a,
+.bookMain li.bookItem .bookAuthor a{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-size: 0.24rem;
+    display: block;
+    width: 100%;
+    overflow: hidden
+}
+.bookMain li.bookItem .bookTitle{
+    margin:0.16rem 0 0.04rem;
+}
